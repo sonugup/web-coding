@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+    <style>
+      #products{
+        display: grid;
+        width: 40%;
+        margin:  auto;
+        padding: 30px;
+      }
+      #products>input{
+        padding: 20px;
+        margin: 10px;
+      }
+      #navbar{
+       background-color:rgb(26, 4, 46);
+       margin: auto;
+       display: block;
+       padding: 20px;
+       text-align: center;
+      }
+      #show_products{
+        margin: auto ;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+      }
+      h2{
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
+  <body>
+    <div id="navbar">
+      <button id="show_products"><a href="inventory.html">Show product</a></button>
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+     <form id="products" onsubmit="addData(event)">
+       <input type="text" name="type" id="type" placeholder="Type">
+       <input type="text" name="desc" id="desc" placeholder="Description">
+       <input type="number" name="price" id="price" placeholder="Price">
+       <input type="img" name="img" id="image">
+       <button id="add_product">Add product</button>
+     </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
